@@ -1,14 +1,14 @@
 package com.example.simplerestapis.models;
 public class SampleResponse {
-	private String version;
+	private long version;
 	private long id;
 	private String description;
 
-	public String getversion() {
+	public long getversion() {
 		return version;
 	}
 
-	public void setversion(String version) {
+	public void setversion(long version) {
 		this.version = version;
 	}
 

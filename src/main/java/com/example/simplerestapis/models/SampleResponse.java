@@ -1,14 +1,15 @@
 package com.example.simplerestapis.models;
 public class SampleResponse {
-	private String message;
+	private String version;
 	private long id;
+	private String description;
 
-	public String getMessage() {
-		return message;
+	public String getversion() {
+		return version;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setversion(String version) {
+		this.version = version;
 	}
 
 	public long getId() {
@@ -17,6 +18,14 @@ public class SampleResponse {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+	
+	public String getdescription() {
+		return description;
+	}
+
+	public void setdescription(String description) {
+		this.description = description;
 	}
 
 }

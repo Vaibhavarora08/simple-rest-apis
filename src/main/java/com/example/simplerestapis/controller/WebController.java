@@ -12,22 +12,22 @@ import com.example.simplerestapis.models.SampleResponse;
 @RestController
 public class WebController {
 
-	@RequestMapping("/sample")
-	public SampleResponse Sample(@RequestParam(value = "name",
-	defaultValue = "Robot") String name) {
+	@RequestMapping("/version")
+	public SampleResponse Sample(@RequestParam(value = "version",
+	defaultValue = "1.0") long version) {
 		SampleResponse response = new SampleResponse();
-		response.setId(1);
-		response.setMessage("Your name is "+name);
+		response.setlastcommitsha(ahdfgs);
+		response.setMessage("Your version is "+version);
 		return response;
 
 	}
 	
-	@RequestMapping(value = "/test", method = RequestMethod.POST)
+	@RequestMapping(value = "/version", method = RequestMethod.POST)
 	public PostResponse Test(@RequestBody PostRequest inputPayload) {
 		PostResponse response = new PostResponse();
-		response.setId(inputPayload.getId()*100);
-		response.setMessage("Hello " + inputPayload.getName());
-		response.setExtra("Some text");
+		response.setversion(inputPayload.getversion()*100);
+		response.setlastcommitsha( inputPayload.getlastcommitsha());
+		response.setdescription("pre-interview technical test");
 		return response;
 	}
 }

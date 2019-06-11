@@ -1,26 +1,32 @@
 package com.example.simplerestapis.models;
 
 public class PostResponse {
-	int id;
-	String message;
-	String extra;
-	public String getExtra() {
-		return extra;
+	long version;
+        String lastcommitsha;
+	String description;
+
+	public long getversion() {
+		return version;
 	}
-	public int getId() {
-		return id;
+
+	public void setversion(long version) {
+		this.version = version;
 	}
-	public String getMessage() {
-		return message;
+
+	public String getlastcommitsha() {
+		return lastcommitsha;
 	}
-	public void setExtra(String extra) {
-		this.extra = extra;
+
+	public void setlastcommiitsha(long lastcommitsha) {
+		this.lastcommitsha = lastcommitsha;
 	}
-	public void setId(int id) {
-		this.id = id;
+	
+	public String getdescription() {
+		return description;
 	}
-	public void setMessage(String message) {
-		this.message = message;
+
+	public void setdescription(String description) {
+		this.description = description;
 	}
 
 }

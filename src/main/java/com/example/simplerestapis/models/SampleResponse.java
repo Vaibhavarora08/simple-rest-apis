@@ -1,7 +1,7 @@
 package com.example.simplerestapis.models;
 public class SampleResponse {
 	private long version;
-	private long id;
+	private String lastcommitsha;
 	private String description;
 
 	public long getversion() {
@@ -12,12 +12,12 @@ public class SampleResponse {
 		this.version = version;
 	}
 
-	public long getId() {
-		return id;
+	public String getlastcommitsha() {
+		return lastcommitsha;
 	}
 
-	public void setId(long id) {
-		this.id = id;
+	public void setlastcommiitsha(long lastcommitsha) {
+		this.lastcommitsha = lastcommitsha;
 	}
 	
 	public String getdescription() {
